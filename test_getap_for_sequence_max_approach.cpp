@@ -96,20 +96,21 @@ int main(int argc, char ** argv) {
       printf("\n");
 
 
-      int aps = scan.getAPsForSequence(channelList, minChannelTimeList, maxChannelTimeList);
+      //int aps = scan.getAPsForSequence(channelList, minChannelTimeList, maxChannelTimeList);
+      int aps = scan.getAPsForSequenceMaxApproach(channelList, minChannelTimeList, maxChannelTimeList);
       printf("numero de aps descubiertos por la cadena: %d \n", aps);
 
       printf("**************************************************\n");
-/*
+
       aps = 0;
       int sum = 0;
       for (int j=0; j<30; j++) {
-          aps = scan.getAPsForSequence(channelList, minChannelTimeList, maxChannelTimeList);
+          aps = scan.getAPsForSequenceMaxApproach(channelList, minChannelTimeList, maxChannelTimeList);
           printf("%d,", aps);
           sum = sum + aps;
       }
       printf("\npromedio de APs en 30 ejecuciones: %d \n", sum/30);
-*/
+
       myfile.close();
   }
   else {

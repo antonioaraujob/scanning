@@ -5,10 +5,19 @@ $ g++ -o test_campaign test_campaign.cpp scan.cpp -lsqlite3 -std=c++11
 
 $ g++ -o test_getap test_getap.cpp scan.cpp -lsqlite3 -std=c++11
 
+$ g++ -o test_getap_for_sequence_max_approach test_getap_for_sequence_max_approach.cpp scan.cpp -lsqlite3 -std=c++11
+
+
 To execute:
 $ ./test_scan test_18.1.db full
 $ ./test_campaign test_18.1.db full
 
 Repite 50 consultas a la función getAPs(int channel, int min, int max)
 $ ./test_getap database.db full
+
+
+Prueba de 30 repeticiones para obtener número de APs dada una secuencia en un archivo
+$ ./test_getap_for_sequence_max_approach database.db full culturalAlgorithmSequence2.txt
+
+
 

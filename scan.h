@@ -485,6 +485,45 @@ class ScanningCampaing {
         return results;
     }
 
+     /**
+     * @brief nueva funcion para obtener el numero de APs en un canal de acuerdo
+     * al enfoque de repetir nscans veces. nscans veces es tomado de una distribución
+     * uniforme entre 1 y 8
+     *
+     * @param channel canal a escanear
+     * @param min MinChannelTime
+     * @param max MaxChannelTime
+     * @return numero de APs encontrados en un canal de acuerdo al enfoque de repetir 
+     * nscans veces.
+     */
+    int getAPsMaxApproach(int channel, double min, double max) {
+	//printf("getAPsMaxApproach()\n");
+	std::random_device rd;
+    	std::mt19937 gen(rd());
+	std::uniform_int_distribution<> dis(1, 8);
+
+	int nscans = dis(gen);
+	//printf("nscans: %d\n", nscans);
+
+	int tmpAPs = 0;
+	int apsFound = 0;
+	std::vector<ProbeResponse> results;
+
+	for(int i=0; i<nscans; i++)
+    	{
+		results = getAPs(channel, min, max); 
+        	tmpAPs = results.size();
+		//printf("	tmpAPs: %d\n", tmpAPs);
+	        if (tmpAPs > apsFound)
+        	{
+			apsFound = tmpAPs;
+        	}
+    	}
+	//printf("	apsFound: %d\n", apsFound);
+	return apsFound;
+    }
+
+
     /**
      * @brief Retorna el numero de APs que obtenidos por el emulador para la secuencia dada.
      * @param channelList lista ordenada de los canales a escanear
@@ -493,6 +532,8 @@ class ScanningCampaing {
      * @return numero de APs que obtenidos por el emulador para la secuencia dada.
      */
     int getAPsForSequence(std::vector<int> channelList,  std::vector<int> minChannelTimeList, std::vector<int> maxChannelTimeList) {
+
+	printf("scan.getAPsForSequence()");
 
         int minChannelTime = 0;
         int maxChannelTime = 0;
@@ -504,12 +545,47 @@ class ScanningCampaing {
             channel = channelList.at(i);
             minChannelTime = minChannelTimeList.at(i);
             maxChannelTime = maxChannelTimeList.at(i);
+	    printf("channel: %d, min: %d, max: %d \n", channel, minChannelTime, maxChannelTime);
             results = getAPs(channel, minChannelTime, maxChannelTime);
+	    printf("results: %d\n", results.size());
             apsFound = apsFound + results.size();
+	    printf("apsFound: %d \n", apsFound);
         }
         return apsFound;
     }
 
+     /**
+     * @brief Retorna el numero de APs obtenidos por el emulador para la secuencia dada
+     * de acuerdo al enfoque de realizar nscans aleatorios y tomar el mayor valor obtenido
+     *
+     * @param channelList lista ordenada de los canales a escanear
+     * @param minChannelTimeList lista de los valores de MinChannelTime para cada canal de la secuencia
+     * @param maxChannelTimeList lista de los valores de MaxChannelTime para cada canal de la secuencia
+     * @return numero de APs que obtenidos por el emulador para la secuencia dada.
+     */
+    int getAPsForSequenceMaxApproach(std::vector<int> channelList,  std::vector<int> minChannelTimeList, std::vector<int> maxChannelTimeList) {
+
+	//printf("scan.getAPsForSequenceMaxApproach()");
+
+	int minChannelTime = 0;
+        int maxChannelTime = 0;
+        int channel = 0;
+        int apsFound = 0;
+        //std::vector<ProbeResponse> results;
+	int results = 0;
+
+        for (int i = 0; i < channelList.size(); i++) {
+            channel = channelList.at(i);
+            minChannelTime = minChannelTimeList.at(i);
+            maxChannelTime = maxChannelTimeList.at(i);
+	    //printf("channel: %d, min: %d, max: %d \n", channel, minChannelTime, maxChannelTime);
+            results = getAPsMaxApproach(channel, minChannelTime, maxChannelTime);
+	    //printf("results: %d\n", results);
+            apsFound = apsFound + results;
+	    //printf("apsFound: %d \n", apsFound);
+        }
+        return apsFound;
+    }
 
 
   private:
