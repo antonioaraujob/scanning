@@ -1,0 +1,15 @@
+full;3;3;00:0f:b5:96:37:00
+full;3;3;00:50:7f:67:01:20
+full;3;3;0e:17:7b:67:7d:ed
+full;3;3;0e:17:7b:67:7d:ee
+full;3;3;5c:a3:9d:cc:22:08
+full;3;3;96:fe:f4:9c:d6:0c
+full;3;3;96:fe:f4:9c:d6:0d
+full;3;3;f4:ca:e5:84:b6:9d
+full;3;3;f4:ca:e5:84:b6:9e
+full;3;3;f4:ca:e5:c2:2c:68
+full;3;3;f4:ca:e5:c2:2c:69
+full;3;3;f4:ca:e5:c2:2c:6a
+full;3;3;f4:ca:e5:e8:c7:14
+full;3;3;f4:ca:e5:e8:c7:15
+full;3;3;f4:ca:e5:e8:c7:16

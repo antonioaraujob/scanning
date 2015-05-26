@@ -502,7 +502,8 @@ class ScanningCampaing {
     	std::mt19937 gen(rd());
 	std::uniform_int_distribution<> dis(1, 8);
 
-	int nscans = dis(gen);
+	//int nscans = dis(gen);
+	int nscans = 2;
 	//printf("nscans: %d\n", nscans);
 
 	int tmpAPs = 0;

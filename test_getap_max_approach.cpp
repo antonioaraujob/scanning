@@ -26,6 +26,12 @@ int main(int argc, char ** argv) {
 
   scan.prepareIRD();
 
+
+  results = scan.getAPsMaxApproach(ch, min, max);
+  printf("getAPsMaxApproach(%d, %d, %d) = %d \n", ch, min, max, results);
+
+/*
+
   for (int i = 0; i<50; i++) {
         results = scan.getAPsMaxApproach(ch, min, max);
         printf("getAPsMaxApproach(%d, %d, %d) = %d \n", ch, min, max, results);
@@ -41,6 +47,8 @@ int main(int argc, char ** argv) {
         //printf("\n");
   }
   //printf("max: %d \n", maxaps);
+
+*/
 
   return 0;
 }

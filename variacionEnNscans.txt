@@ -1,0 +1,298 @@
+********************************************************************************
+********************************************************************************
+Repeticiones de full scanning con nscans = 2
+
+
+meego
+11,10,18,15,16,20,14,17,13,13,19,20,10,20,18,18,17,15,16,14,20,20,18,20,14,15,13,14,20,16
+
+intervalo de confianza
+
+> meego_2=c(11,10,18,15,16,20,14,17,13,13,19,20,10,20,18,18,17,15,16,14,20,20,18,20,14,15,13,14,20,16)
+> t.test(meego_2)
+
+	One Sample t-test
+
+data:  meego_2 
+t = 28.3642, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 14.97002 17.29664 
+sample estimates:
+mean of x 
+ 16.13333
+
+********************************************************************************
+Android
+25,24,24,21,23,28,21,29,22,29,28,29,32,23,30,25,26,25,32,35,32,32,21,24,22,28,35,23,26,27
+
+
+intervalo de confianza
+
+> android_2=c(25,24,24,21,23,28,21,29,22,29,28,29,32,23,30,25,26,25,32,35,32,32,21,24,22,28,35,23,26,27)
+> t.test(android_2)
+
+	One Sample t-test
+
+data:  android_2 
+t = 35.3508, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 25.15526 28.24474 
+sample estimates:
+mean of x 
+     26.7
+
+
+********************************************************************************
+Debian
+16,9,10,12,8,12,12,12,9,14,11,14,13,15,17,13,15,8,14,12,14,17,13,17,9,15,10,8,12,15
+
+intervalo de confianza
+
+> debian_2=c(16,9,10,12,8,12,12,12,9,14,11,14,13,15,17,13,15,8,14,12,14,17,13,17,9,15,10,8,12,15)
+> t.test(debian_2)
+
+	One Sample t-test
+
+data:  debian_2 
+t = 24.8412, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 11.50144 13.56523 
+sample estimates:
+mean of x 
+ 12.53333 
+
+
+********************************************************************************
+Windows
+22,18,14,21,16,18,15,17,11,14,12,15,12,17,12,14,12,12,13,12,15,17,18,12,19,20,14,15,16,18
+
+intervalo de confianza
+> windows_2=c(22,18,14,21,16,18,15,17,11,14,12,15,12,17,12,14,12,12,13,12,15,17,18,12,19,20,14,15,16,18)
+> t.test(windows_2)
+
+	One Sample t-test
+
+data:  windows_2 
+t = 28.1655, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 14.25082 16.48251 
+sample estimates:
+mean of x 
+ 15.36667
+
+********************************************************************************
+iOS
+24,23,28,31,25,26,17,24,19,23,27,20,28,27,15,24,21,26,21,29,26,20,26,31,27,24,22,21,19,27
+
+
+intervalo de confianza
+> ios_2=c(24,23,28,31,25,26,17,24,19,23,27,20,28,27,15,24,21,26,21,29,26,20,26,31,27,24,22,21,19,27)
+> t.test(ios_2)
+
+	One Sample t-test
+
+data:  ios_2 
+t = 33.3074, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 22.55757 25.50909 
+sample estimates:
+mean of x 
+ 24.03333
+
+********************************************************************************
+culturalAlgorithm1
+13,17,20,15,19,22,21,25,24,23,21,22,24,20,15,14,21,19,15,17,17,25,22,18,11,14,15,19,19,15
+
+
+intervalo de confianza
+> c1_2=c(13,17,20,15,19,22,21,25,24,23,21,22,24,20,15,14,21,19,15,17,17,25,22,18,11,14,15,19,19,15)
+> t.test(c1_2)
+
+	One Sample t-test
+
+data:  c1_2 
+t = 26.9662, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 17.31252 20.15415 
+sample estimates:
+mean of x 
+ 18.73333
+
+
+********************************************************************************
+culturalAlgorithm2
+24,20,21,20,28,26,13,17,14,25,21,16,25,25,26,18,18,19,21,15,16,16,20,17,22,23,15,27,22,15
+
+
+intervalo de confianza
+> c2_2=c(24,20,21,20,28,26,13,17,14,25,21,16,25,25,26,18,18,19,21,15,16,16,20,17,22,23,15,27,22,15)
+> t.test(c2_2)
+
+	One Sample t-test
+
+data:  c2_2 
+t = 25.8338, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 18.57009 21.76324 
+sample estimates:
+mean of x 
+ 20.16667
+
+
+********************************************************************************
+********************************************************************************
+Repeticiones de full scanning con nscans = 4
+
+
+meego
+17,26,23,16,26,20,23,24,20,22,24,21,21,24,21,23,23,24,20,23,25,16,23,22,20,19,25,22,19,22
+
+
+intervalo de confianza
+> meego_4=c(17,26,23,16,26,20,23,24,20,22,24,21,21,24,21,23,23,24,20,23,25,16,23,22,20,19,25,22,19,22)
+> t.test(meego_4)
+
+	One Sample t-test
+
+data:  meego_4 
+t = 44.9315, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 20.80769 22.79231 
+sample estimates:
+mean of x 
+     21.8 
+
+
+
+
+********************************************************************************
+Android
+39,33,37,38,35,29,38,36,33,36,38,28,30,33,33,30,39,33,33,31,35,34,29,33,36,35,33,30,33,37
+
+intervalo de confianza
+
+> android_4=c(39,33,37,38,35,29,38,36,33,36,38,28,30,33,33,30,39,33,33,31,35,34,29,33,36,35,33,30,33,37)
+> t.test(android_4)
+
+	One Sample t-test
+
+data:  android_4 
+t = 59.4698, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 32.73414 35.06586 
+sample estimates:
+mean of x 
+     33.9
+
+
+********************************************************************************
+Debian
+18,20,16,16,19,17,15,16,19,16,19,20,16,18,15,18,16,14,21,16,14,15,16,18,14,14,13,22,15,15
+
+intervalo de confianza
+> debian_4=c(18,20,16,16,19,17,15,16,19,16,19,20,16,18,15,18,16,14,21,16,14,15,16,18,14,14,13,22,15,15)
+> t.test(debian_4)
+
+	One Sample t-test
+
+data:  debian_4 
+t = 39.9141, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 15.84428 17.55572 
+sample estimates:
+mean of x 
+     16.7
+
+********************************************************************************
+Windows
+24,21,21,23,24,23,19,18,22,24,20,20,18,18,20,23,20,21,23,17,22,19,22,22,21,19,24,19,19,18
+
+intervalo de confianza
+> windows_4=c(24,21,21,23,24,23,19,18,22,24,20,20,18,18,20,23,20,21,23,17,22,19,22,22,21,19,24,19,19,18)
+> t.test(windows_4)
+
+	One Sample t-test
+
+data:  windows_4 
+t = 53.6437, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 20.00698 21.59302 
+sample estimates:
+mean of x 
+     20.8
+
+********************************************************************************
+iOS
+31,33,32,32,33,32,35,31,30,28,30,31,29,27,30,31,34,34,27,32,35,27,33,28,29,30,28,37,35,31
+
+
+intervalo de confianza
+> ios_4=c(31,33,32,32,33,32,35,31,30,28,30,31,29,27,30,31,34,34,27,32,35,27,33,28,29,30,28,37,35,31)
+> t.test(ios_4)
+
+	One Sample t-test
+
+data:  ios_4 
+t = 64.3365, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 30.17589 32.15744 
+sample estimates:
+mean of x 
+ 31.16667
+
+
+
+********************************************************************************
+culturalAlgorithm1
+23,25,27,22,27,24,28,28,24,23,24,24,25,22,23,22,32,27,21,24,25,27,25,27,27,27,27,34,24,28
+
+intervalo de confianza
+> c1=c(23,25,27,22,27,24,28,28,24,23,24,24,25,22,23,22,32,27,21,24,25,27,25,27,27,27,27,34,24,28)
+> t.test(c1)
+
+	One Sample t-test
+
+data:  c1 
+t = 48.4662, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 24.45585 26.61082 
+sample estimates:
+mean of x 
+ 25.53333
+
+
+********************************************************************************
+culturalAlgorithm2
+27,29,31,30,20,28,32,34,30,26,34,28,28,20,32,36,32,33,30,24,27,29,25,24,24,32,28,24,30,32
+
+intervalo de confianza
+
+> c2_4=c(27,29,31,30,20,28,32,34,30,26,34,28,28,20,32,36,32,33,30,24,27,29,25,24,24,32,28,24,30,32)
+> t.test(c2_4)
+
+	One Sample t-test
+
+data:  c2_4 
+t = 39.2515, df = 29, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0 
+95 percent confidence interval:
+ 27.14137 30.12529 
+sample estimates:
+mean of x 
+ 28.63333
+
+
+
